@@ -1,0 +1,18 @@
+name = "Alpenpower EU B2B Pricing"
+client_id = "00000000000000000000000000000000"
+application_url = "https://example.com"
+embedded = true
+
+[build]
+dev_store_url = "your-dev-store.myshopify.com"
+
+[auth]
+redirect_urls = [
+  "https://example.com/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[use_extension]
+path = "extensions/b2b-eu-tax-pricing"
