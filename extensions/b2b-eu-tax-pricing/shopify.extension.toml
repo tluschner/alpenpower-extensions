@@ -1,0 +1,11 @@
+name = "Alpenpower EU B2B Checkout Pricing"
+type = "checkout_pricing"
+handle = "b2b-eu-tax-pricing"
+api_version = "2024-04"
+
+[build]
+command = "npm run function:build -- --function-id=b2b-eu-tax-pricing"
+path = "src/index.ts"
+
+[capabilities]
+decimal_precision = 2

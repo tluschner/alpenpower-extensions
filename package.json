@@ -1,0 +1,21 @@
+{
+  "name": "alpenpower-extensions",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "shopify app build",
+    "deploy": "shopify app deploy",
+    "function:build": "shopify functions build",
+    "function:test": "shopify functions test"
+  },
+  "dependencies": {
+    "@shopify/shopify_function": "^1.0.2"
+  },
+  "devDependencies": {
+    "@shopify/cli": "^3.63.0",
+    "@shopify/app": "^3.63.0",
+    "@types/node": "^18.19.31",
+    "typescript": "^5.4.5"
+  }
+}

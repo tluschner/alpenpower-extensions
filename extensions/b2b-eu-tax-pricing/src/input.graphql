@@ -1,0 +1,39 @@
+query Input {
+  cart {
+    buyerIdentity {
+      customer {
+        id
+        taxExempt
+        b2b
+      }
+      companyLocation {
+        countryCode
+        id
+        taxExempt: metafield(namespace: "alpenpwr", key: "taxexempt") {
+          value
+        }
+        vatNumber: metafield(namespace: "alpenpwr", key: "vatnumber") {
+          value
+        }
+      }
+    }
+    lines {
+      id
+      cost {
+        amountPerQuantity {
+          amount
+          currencyCode
+        }
+      }
+      quantity
+    }
+  }
+  shop {
+    billingAddress {
+      countryCode
+    }
+    metafield(namespace: "tax", key: "vat_rates") {
+      value
+    }
+  }
+}
